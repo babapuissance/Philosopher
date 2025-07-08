@@ -105,4 +105,4 @@ short	setup_philosophers(t_context *ctx)
 	if (launch_odd_philosophers(ctx))
 		return (1);
 	return (0);
-} 
+}

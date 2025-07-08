@@ -59,4 +59,4 @@ void	cleanup_resources(t_context *ctx)
 		destroy_philosopher_mutexes(ctx);
 	if (ctx->mem)
 		memory_cleanup(ctx->mem);
-} 
+}

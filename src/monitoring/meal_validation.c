@@ -6,7 +6,7 @@
 /*   By: nbariol- <nassimbariol@student.42.fr>>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 17:42:10 by nbariol-          #+#    #+#             */
-/*   Updated: 2025/07/08 17:42:22 by nbariol-         ###   ########.fr       */
+/*   Updated: 2025/07/08 18:06:04 by nbariol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ static short	check_all_philosophers_fed(t_context *ctx)
 	index = 0;
 	while (index < ctx->cfg->count_philosophers)
 	{
-		if (fetch_meal_count(ctx->philosophers[index]) <
-			ctx->cfg->meals_required)
+		if (fetch_meal_count(ctx->philosophers[index])
+			< ctx->cfg->meals_required)
 			return (0);
 		index++;
 	}
@@ -47,9 +47,9 @@ static short	check_philosopher_starvation(t_context *ctx, size_t index)
 	size_t	starvation_time;
 
 	starvation_time = calculate_time_since_meal(ctx->philosophers[index]);
-	if (starvation_time > ctx->cfg->deadline_time &&
-		fetch_meal_count(ctx->philosophers[index]) <
-		ctx->cfg->meals_required)
+	if (starvation_time > ctx->cfg->deadline_time
+		&& fetch_meal_count(ctx->philosophers[index])
+		< ctx->cfg->meals_required)
 	{
 		return (1);
 	}
@@ -82,4 +82,4 @@ short	validate_meal_times(t_context *ctx)
 		index++;
 	}
 	return (0);
-} 
+}

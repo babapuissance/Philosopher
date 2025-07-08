@@ -6,7 +6,7 @@
 /*   By: nbariol- <nassimbariol@student.42.fr>>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 17:38:30 by nbariol-          #+#    #+#             */
-/*   Updated: 2025/07/08 17:44:19 by nbariol-         ###   ########.fr       */
+/*   Updated: 2025/07/08 18:00:11 by nbariol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,4 @@ short	action_consume_meal(t_philo *philosopher)
 	announce_eating_state(philosopher);
 	precise_delay(philosopher->cfg->duration_eat);
 	return (0);
-} 
+}

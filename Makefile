@@ -5,9 +5,11 @@ OBJDIR = obj
 INCDIR = include
 
 SRC = philo.c \
+		actions/fork_acquire.c \
 		actions/fork_actions.c \
 		actions/meal_actions.c \
 		actions/rest_actions.c \
+		actions/think_actions.c \
 		actions/routines.c \
 		setup/config_setup.c \
 		setup/forks_setup.c \

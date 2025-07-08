@@ -40,4 +40,4 @@ short	await_threads(t_context *ctx)
 	if (synchronize_watcher_thread(ctx))
 		return (1);
 	return (0);
-} 
+}

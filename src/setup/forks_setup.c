@@ -49,4 +49,4 @@ short	setup_forks(t_context *ctx)
 	initialize_fork_mutexes(ctx);
 	initialize_coordination_mutexes(ctx);
 	return (0);
-} 
+}

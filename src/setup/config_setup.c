@@ -52,4 +52,4 @@ short	setup_config(t_context *ctx, char **argv)
 	configure_meal_requirements(ctx, argv);
 	initialize_simulation_state(ctx);
 	return (0);
-} 
+}

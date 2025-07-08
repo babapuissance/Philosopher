@@ -61,4 +61,4 @@ void	increment_meal_count(t_philo *philosopher)
 	pthread_mutex_lock(&philosopher->lock_meal_count);
 	philosopher->meals_consumed++;
 	pthread_mutex_unlock(&philosopher->lock_meal_count);
-} 
+}
