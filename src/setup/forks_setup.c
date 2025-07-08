@@ -6,7 +6,7 @@
 /*   By: nbariol- <nassimbariol@student.42.fr>>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 17:40:40 by nbariol-          #+#    #+#             */
-/*   Updated: 2025/07/08 17:44:19 by nbariol-         ###   ########.fr       */
+/*   Updated: 2025/07/08 18:17:25 by nbariol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static short	allocate_forks_array(t_context *ctx)
 {
-	ctx->cfg->forks = malloc(sizeof(pthread_mutex_t) *
-		ctx->cfg->count_philosophers);
+	ctx->cfg->forks = malloc(sizeof(pthread_mutex_t)
+		* ctx->cfg->count_philosophers);
 	if (!ctx->cfg->forks)
 		return (1);
 	if (memory_add(ctx->mem, ctx->cfg->forks))
