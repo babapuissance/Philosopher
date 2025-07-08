@@ -6,7 +6,7 @@
 /*   By: nbariol- <nassimbariol@student.42.fr>>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 15:41:49 by nbariol-          #+#    #+#             */
-/*   Updated: 2025/07/08 15:41:54 by nbariol-         ###   ########.fr       */
+/*   Updated: 2025/07/08 17:43:37 by nbariol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@
 short		setup_forks(t_context *ctx);
 short		setup_config(t_context *ctx, char **argv);
 short		setup_philosophers(t_context *ctx);
+short		initialize_simulation(t_context *ctx, char **argv);
 
 /*          WATCHER            */
 short		launch_watcher(t_context *ctx);

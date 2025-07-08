@@ -5,10 +5,20 @@ OBJDIR = obj
 INCDIR = include
 
 SRC = philo.c \
-		init.c \
-		routines.c \
-		monitor.c \
-		utils.c \
+		actions/fork_actions.c \
+		actions/meal_actions.c \
+		actions/rest_actions.c \
+		actions/routines.c \
+		setup/config_setup.c \
+		setup/forks_setup.c \
+		setup/philo_setup.c \
+		setup/init.c \
+		monitoring/monitor.c \
+		monitoring/meal_validation.c \
+		monitoring/thread_sync.c \
+		utils/utils.c \
+		utils/sync_utils.c \
+		utils/cleanup_utils.c \
 		lib/garbage_collector.c \
 		lib/ft_atoll.c \
 		lib/ft_strlen.c \

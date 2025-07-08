@@ -6,7 +6,7 @@
 /*   By: nbariol- <nassimbariol@student.42.fr>>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 15:41:49 by nbariol-          #+#    #+#             */
-/*   Updated: 2025/07/08 15:52:21 by nbariol-         ###   ########.fr       */
+/*   Updated: 2025/07/08 17:35:44 by nbariol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,4 +126,3 @@ void	memory_debug_display(t_memory *mem)
 		i++;
 	}
 }
-
